@@ -1,0 +1,32 @@
+
+#main-img{
+    max-width: 250px;
+}
+.my-bg-dark{
+background-color: #2C3E50;
+}
+.my-bg-darkest{
+    background-color: #2C3E50;
+}
+.my-bg-teal{
+    background-color: #1ABC9C;
+}
+
+:root{
+    --bs-success-rgb: 26, 188, 156;
+}
+.btn-success{
+    --bs-btn-bg: rgb(var(--bs-success-rgb));
+    --bs-btn-hover-bg: rgb(var(--bs-success-rgb));
+    --bs-btn-hover-border-color: rgb(var(--bs-success-rgb));
+    --bs-btn-active-bg: rgb(var(--bs-success-rgb));
+    --bs-btn-active-border-color: rgb(var(--bs-success-rgb));
+    --bs-btn-border-color: rgb(var(--bs-success-rgb));
+}
+#message{
+    min-height: 200px;
+}
+
+footer > section :first-child{
+    background-color: #3A546D;
+}
