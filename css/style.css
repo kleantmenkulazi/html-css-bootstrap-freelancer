@@ -3,7 +3,7 @@
     max-width: 250px;
 }
 .my-bg-dark{
-background-color: #2C3E50;
+background-color: #3A546D;
 }
 .my-bg-darkest{
     background-color: #2C3E50;
@@ -23,10 +23,42 @@ background-color: #2C3E50;
     --bs-btn-active-border-color: rgb(var(--bs-success-rgb));
     --bs-btn-border-color: rgb(var(--bs-success-rgb));
 }
+a{
+    --bs-link-color-rgb: 26, 188, 156;
+}
 #message{
     min-height: 200px;
 }
+.footer-icon{
+    display: inline;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
 
-footer > section :first-child{
-    background-color: #3A546D;
+}
+/* Sezione stelle come l'avrebbe fatte alessio: container con solo la icona e poi regole e modifiche dirette al container su css per avere ancora più controllo su di eso */
+.star-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.star-container::before,
+.star-container::after{
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 25%;
+    max-width: 200px;
+    background-color: black;
+    border-radius: 2px;
+}
+.text-white .star-container::before,
+.text-white .star-container::after{
+    background-color: white;
 }
